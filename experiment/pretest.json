@@ -4,8 +4,8 @@
     {
       "question": "What is the definition of calibration?",
       "answers": {
-         "a": "Calibration is the process of configuring an instrument to provide a result for a sample within an acceptable range.  ",
-        "b": " Calibration is configuring and verifying a measuring instrument's accuracy to ensure its readings match a known standard	",
+         "a": "Calibration is the process of configuring an instrument to provide a result for a sample within an acceptable range",
+        "b": "Calibration is configuring and verifying a measuring instrument's accuracy to ensure its readings match a known standard",
         "c": "Calibration means comparing with standard device and adjusting it for accuracy within the limit",
         "d": "All"
 		
@@ -17,9 +17,9 @@
     {
       "question": "What is traceability?", 	
       "answers": {
-        "a": " Traceability is the ability to identify and follow something or someone, or to keep track of information	 ",
-        "b": "Traceability in calibration is the ability to link the readings of a measuring instrument to a known reference standard.	 ",
-        "c": "Traceability means knowing and documenting the reference instrument used for calibration of device under test	 ",
+        "a": "Traceability is the ability to identify and follow something or someone, or to keep track of information",
+        "b": "Traceability in calibration is the ability to link the readings of a measuring instrument to a known reference standard",
+        "c": "Traceability means knowing and documenting the reference instrument used for calibration of device under test",
         "d": "All"
       },
      
@@ -41,7 +41,7 @@
 	{
       "question": "On what basis the sensors are selected for specific application in an industry ?",
       "answers": {
-        "a": "Range of the sensor			",
+        "a": "Range of the sensor",
         "b": "Accuracy and Linearity in the operating region",			
         "c": "Cost of the sensor",
         "d": "All "
@@ -78,7 +78,7 @@
     },
 	
 	 {
-      "question": "For calibration of level sensor in your opinion which sensor will be the best as "Standard" sensor?",
+      "question": "For calibration of level sensor in your opinion which sensor will be the best as 'Standard' sensor?",
       "answers": {
         "a": "Ultrasonic",
         "b": "Capacitive",
@@ -109,7 +109,7 @@
         "a": "Necessary interlocks",
         "b": "Emergency STOP push button",
         "c": "Redundancy at PLC level",
-        "d": ""Fail Safe" operation for all components"
+        "d": "'Fail Safe' operation for all components"
       },
      
       "correctAnswer": "d",
