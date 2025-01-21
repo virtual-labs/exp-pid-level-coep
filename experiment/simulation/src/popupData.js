@@ -72,5 +72,43 @@
 					+' '
 				$("#proBody").html(htm);
 			});
+			$("#tagDetails").click(function () {
+				 $("#modelDialog").removeClass("modal-xl");
+				 $("#modelDialog").addClass("modal-md");
+				$("#modalTitle").html("TAG DETAILS");
+				htm=''
+					+'<table class="table table-bordered table-hover" style="font-size:larger;">'
+					+' <thead>'
+					+'<tr class="table-info">'
+					+'<th>Tag</th>'
+					+'<th>Tag Details</th>'
+					+'</tr>'
+					+'</thead>'
+					+' <tbody>'
+					+'<tr>'
+					+'<td>Ultrasonic Sensor </td>'
+					+'<td>LT1</td>'
+					+'</tr>'
+					+'<tr>'
+					+'<td>Capacitive Sensor </td>'
+					+'<td>LT2</td>'
+					+'</tr>'
+					+'<tr>'
+					+'<td>Magnetostrictive Sensor </td>'
+					+'<td>LT3</td>'
+					+'</tr>'
+					+'<tr>'
+					+'<td>Pulse Radar Sensor  </td>'
+					+'<td>LT4</td>'
+					+'</tr>'
+					+'<tr>'
+					+'<td>Guided Wave Radar Sensor </td>'
+					+'<td>LT5</td>'
+					+'</tr>'
+				
+					+'</tbody>'
+					+'</table>'
+				$("#tagBody").html(htm);
+			});
 				
 	
