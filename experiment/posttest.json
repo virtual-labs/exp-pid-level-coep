@@ -4,7 +4,7 @@
     {
       "question": "In your opinion why all the customer requirements could not be satisfied?",
       "answers": {
-         "a": "Poor Engineering of the project ",
+         "a": "Poor Engineering of the project",
         "b": "Lack of undestanding of the requirements",
         "c": "Scope is unclear",
         "d": "Available infrastructure is inadequate"
