@@ -1,5 +1,3 @@
-## References
-
 ###### Books :
 
 -	Omega Engineering. (2019). The Temperature Handbook. Vol. 29. Stamford, CT : Omega Engineering. ISBN 978-1-934391-29-5.
