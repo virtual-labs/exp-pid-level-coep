@@ -67,7 +67,6 @@
 			$("#procedure").click(function () {
 				 $("#modelDialog").removeClass("modal-xl");
 				 $("#modelDialog").addClass("modal-md");
-				$("#modalTitle").html("PROCEDURE");
 				htm=''
 					+' '
 				$("#proBody").html(htm);
@@ -75,7 +74,6 @@
 			$("#tagDetails").click(function () {
 				 $("#modelDialog").removeClass("modal-xl");
 				 $("#modelDialog").addClass("modal-md");
-				$("#modalTitle").html("TAG DETAILS");
 				htm=''
 					+'<table class="table table-bordered table-hover" style="font-size:larger;">'
 					+' <thead>'
@@ -86,24 +84,24 @@
 					+'</thead>'
 					+' <tbody>'
 					+'<tr>'
-					+'<td>Ultrasonic Sensor </td>'
 					+'<td>LT1</td>'
+					+'<td>Ultrasonic Sensor </td>'
 					+'</tr>'
 					+'<tr>'
-					+'<td>Capacitive Sensor </td>'
 					+'<td>LT2</td>'
+					+'<td>Capacitive Sensor </td>'
 					+'</tr>'
 					+'<tr>'
-					+'<td>Magnetostrictive Sensor </td>'
 					+'<td>LT3</td>'
+					+'<td>Magnetostrictive Sensor </td>'
 					+'</tr>'
 					+'<tr>'
-					+'<td>Pulse Radar Sensor  </td>'
 					+'<td>LT4</td>'
+					+'<td>Pulse Radar Sensor  </td>'
 					+'</tr>'
 					+'<tr>'
-					+'<td>Guided Wave Radar Sensor </td>'
 					+'<td>LT5</td>'
+					+'<td>Guided Wave Radar Sensor </td>'
 					+'</tr>'
 				
 					+'</tbody>'
