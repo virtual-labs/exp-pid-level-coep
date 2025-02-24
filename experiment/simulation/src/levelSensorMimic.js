@@ -236,7 +236,7 @@ function levelSensorMimic(){
 		
 
 		paper.clear();
-		var time = 100;
+		var time = 1000;
 		var ht = -160;
 		var ht2 = -152;
 		var ht1 = 160;
