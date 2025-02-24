@@ -57,7 +57,7 @@ $("#datasheetBody").html(htm);
     	  // Add tab content
     	  const tabContent = `
     	    <div class="tab-pane fade ${activeClass ? 'show active' : ''}" id="content-${i}" role="tabpanel">
-    	    <h4> Test cycle - ${i + 1}</h4>
+ 
     	      <table class="table table-bordered mt-3"  style="overflow-y: auto; overflow-x: auto;">
     	        <thead>
     	          <tr>

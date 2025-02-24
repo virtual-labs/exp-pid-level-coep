@@ -1,4 +1,6 @@
 ComponentMasterJson = {};
+timerMasterJson = {};
+resultJson={};
 
 //$( document ).ready(function() {
 	levelSensorPiping();
@@ -20,6 +22,7 @@ var perPumpCount;
 var tank;
 var valve;
 var pump;
+var pipingActualCount=0;
 //var wt;
 	$("#Header").html("	<center><span>LEVEL SENSOR - PIPING DIAGRAM</span></center>");
 	htm=''
@@ -158,7 +161,7 @@ var pump;
 	   var  selectedValues;
 	   var selectedArray=[];
 	$("#verifyComponents").click(function(){
-		
+		pipingActualCount++;
 		 tank=parseInt($("#tank").val());
 //		 wt=parseInt($("#wt").val());
 		 pump=parseInt($("#pump").val());
@@ -318,7 +321,7 @@ var pump;
 					          {
 					            width: "80%",
 					            height: "80%",
-					           left: "+=50px",
+					           left: "+=100px",
 		//			            background-color:"red"
 					            
 					          },
@@ -383,6 +386,8 @@ var pump;
 		ComponentMasterJson.Component=tempMasterJsonComp;
 		ComponentMasterJson.Component.Utilities=selectedArray;
 		console.log(ComponentMasterJson);
+		resultJson.piping=pipingActualCount;
+		console.log(resultJson);
 	}
 	
 	$("#nextLevel1").click(function(){

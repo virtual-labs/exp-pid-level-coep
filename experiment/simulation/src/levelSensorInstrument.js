@@ -25,6 +25,11 @@ function levelSensorInstrument()
 	var fm;
 	var lh;
 	var ll;
+	var instrActualCount=0;
+	timerMasterJson.piping=$("#counter").text();
+//	console.log(timerMasterJson);
+	seconds = 0;
+	  updateCounter();
 	
 	$("#Header").html("	<center><span > LEVEL SENSOR - INSTRUMENT DIAGRAM</span></center>");
 	$("#Selection").css({"overflow": "auto","height":" 837px"});
@@ -101,7 +106,7 @@ function levelSensorInstrument()
 	 var totalComp1=0;
 	   var flag=0;
 	$("#verifyInstr").click(function(){
-		
+		instrActualCount++;
 		 fm=parseInt($("#fm").val());
 		 vplc=parseInt($("#vplc").val());
 		 afr=parseInt($("#afr").val());
@@ -194,7 +199,7 @@ function levelSensorInstrument()
 			          {
 			            width: "80%",
 			            height: "80%",
-			            left: "+=50px",
+			            left: "+=100px",
 			          },
 			          1000,
 			          
@@ -262,6 +267,8 @@ function levelSensorInstrument()
 				
 		InstrMasterJson.Instrument=tempMasterJsonInstr;
 		console.log(InstrMasterJson);
+		resultJson.instrument=instrActualCount;
+		console.log(resultJson);
 	}
 	$("#nextLevel2").click(function(){
 		if(flag==1){

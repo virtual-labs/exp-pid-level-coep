@@ -22,9 +22,11 @@
 <link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/question.css">
-<link rel="stylesheet" href="css/pageStyle.css">
-<link rel="stylesheet" href="css/levelSensor.css">
 <link rel="stylesheet" href="css/toastr.min.css">
+<link rel="stylesheet" href="css/pageStyle.css">
+<link rel="stylesheet" href="css/flowsensor.css">
+<link rel="stylesheet" href="css/result.css">
+
 <style>
 
 #coepLogo,#vlabLogo{
@@ -49,8 +51,8 @@
 	</div>
 	<div  class="row container-fluid" id="buttonDiv" >	
 		<div  class="col-sm-12" > 
-				
-			<button type="button" id="tagDetails" class="btn btn-danger btn1" data-toggle="modal" data-target="#tag"><b>Tag details</b> </button>
+				<h5 id="counter" class=" btn1 timerStyle">00:00:00</h5>
+			<button type="button" id="tagDetails" class="btn btn-danger btn1" data-toggle="modal" data-target="#tagDetail"><b>Tag details</b> </button>
 	        <button type="button" id="simDemo" class="btn btn-danger btn1" data-toggle="modal" data-target="#proStr"><b>Problem statement</b> </button>
   <button type="button" id="procedure" class="btn btn-danger btn1" data-toggle="modal" data-target="#procedure1"><b>Procedure</b> </button>
 
@@ -65,7 +67,7 @@
 			      <div class="modal-content">
 <!-- 		        Modal Header -->
 			        <div class="modal-header">
-		          <h4 class="modal-title"><center>PROBLEM STATEMENT</center></h4>
+<!--		          <h4 class="modal-title"><center>PROBLEM STATEMENT</center></h4>-->
 			          <button type="button" class="close" data-dismiss="modal">&times;</button>
 			        </div>
 <!-- 		        Modal body -->
@@ -101,13 +103,14 @@
 			    </div>
 			  </div>
 <!-- 			  End Modal ProStr -->     
-	     
-	       <div class="modal fade " id="tag">
+
+	   	     <!-- 			    The Modal  ProStr -->
+		  <div class="modal fade " id="tagDetail">
 		    <div class="modal-dialog modal-md" >
 			      <div class="modal-content">
 <!-- 		        Modal Header -->
 			        <div class="modal-header">
-		          <h4 class="modal-title"><center></center></h4>
+		          <h4 class="modal-title"><center id="modalTitle"></center></h4>
 			          <button type="button" class="close" data-dismiss="modal">&times;</button>
 			        </div>
 <!-- 		        Modal body -->
@@ -116,7 +119,7 @@
 			        </div>
 <!-- 			        Modal footer -->
 			        <div class="modal-footer">
-		             <button type="button" class="btn btn-danger" data-dismiss="modal" >OK</button>
+<!-- 		             <button type="button" class="btn btn-danger" data-dismiss="modal" >Ok</button> -->
 			        </div>
 			      </div>
 			    </div>
@@ -148,7 +151,7 @@ Copyrights &copy; COEPTECH - Virtual Labs
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
+   <script src="https://code.highcharts.com/highcharts.js"></script>
 <!-- <script src="src/landingPage.js"></script> -->
 <script src="src/popupData.js"></script>
 <script src="src/stdJson.js"></script>
@@ -157,16 +160,18 @@ Copyrights &copy; COEPTECH - Virtual Labs
 <!-- sensor 2- level sensor -->
 <script src="src/levelSensorPiping.js"></script>
 <script src="src/levelSensorInstrument.js"></script>
-<script src="src/levelSensorPreQuestion.js"></script>
+<script src="src/levelSensorSeqActivities.js"></script>
 <script src="src/levelSensorMimic.js"></script>
 <script src="src/levelSensorGraph.js"></script>
 <script src="src/Datasheet.js"></script>
 <script src="js/toastr.min.js"></script>
+<script src="src/timer.js"></script>
+<script src="src/result.js"></script>
 
 <script>
 $( document ).ready(function() {
 	levelSensorPiping();
-// 	levelSensorMimic();
+//	levelSensorMimic();
 });
 </script>
 <script>
