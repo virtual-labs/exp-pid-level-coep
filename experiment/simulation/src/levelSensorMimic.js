@@ -1,5 +1,12 @@
+var startCount=0;
+var datasheetCount=0;
+var trendsCount=0;
+
 function levelSensorMimic(){
-	
+		timerMasterJson.squences=$("#counter").text();
+//	console.log(timerMasterJson);
+	seconds = 0;
+	  updateCounter();
 	
 	$("#Header").html("	<center><span >SIMULATION</span></center>");
 	$("#diagram").html("");
@@ -104,7 +111,7 @@ function levelSensorMimic(){
 		+'<h4 class="modal-title"><center></center></h4>'
 		+'<button type="button" class="close" data-dismiss="modal">&times;</button>'
 		+'</div>'
-		+'<div class="modal-body" id="Trends1">'
+		+'<div class="modal-body" id="trends1">'
 		+'</div>'
 		+'<div class="modal-footer">'
 //		+'       <button type="button" class="btn btn-danger"  id="download" style="margin-top:10px;float: right;" >Download </button>'
@@ -123,12 +130,83 @@ function levelSensorMimic(){
 //		
 //	});
 	
+		$("#graph").click(function(){
+		trendsCount++;
+		$("#trends1").empty("");
+		var htm=''
+		
+	for(var i=0;i<dataArr.length;i++){
+		htm+='<div class="Container-fluid">'
+//		htm+='<h4>Test Cycle - '+(i+1)
+			var rowStr='RowDiv'+(i+1)
+		  htm+="<div class='row' id='"+rowStr+"'>"
+			
+			var GraphData='sensorGraphCold'+i;
+		    htm+="<div class='col-sm-12' id="+GraphData+">"
+			+'</div>'	
+		 
+		//For Hot Readings
+		
+			var GraphData='sensorGraphHot'+i;
+			htm+="<div class='col-sm-12' id="+GraphData+">"
+			+'</div>'
+			+'<div class="col-sm-12">'
+			+'<button id="GraphDataButton'+(i+1)+'" class="btn btn-danger" style="margin-bottom:10px;float:right;" hidden>Download test Cycle report - '+(i+1)+'</button>'
+			+'</div>'
+			+'</div>'
+			htm+='</div>'
+		$("#trends1").append(htm);
+			tempratureSensorGraphCold(dataArr[i].up,i);
+		tempratureSensorGraphHot(dataArr[i].down,i);
+		 var count=parseInt(i+1);
+			$('#GraphDataButton'+count).on('click', function() {
+				console.log("Clickiuyrotigjdfoigj");
+//				$('#saveAsJpg').prop("hidden",true);
+				
+			    html2canvas(document.querySelector('#RowDiv'+count)).then(canvas => {
+			        // Append the screenshot canvas to the body
+			        document.body.appendChild(canvas);
+			        $("canvas").css("display","none");
+			        // Optionally save the screenshot as an image
+			        var link = document.createElement('a');
+			        link.download = 'Density_report.png';
+			        link.href = canvas.toDataURL();
+			        link.click();
+			    });
+			});
+	}	
+	
+		 
+//	$(document).ready(function () {
+//        $('#GraphDataButton'+(i+1)).on('click', function () {
+//        	console.log("Clickiuyrotigjdfoigj");
+//            html2canvas(document.querySelector('#RowDiv'+count)).then(canvas => {
+//                var imgData = canvas.toDataURL("image/png");
+//                $('#screenshotImg').attr('src', imgData);
+//                $('#downloadBtn').show().off('click').on('click', function() {
+//                    var a = document.createElement('a');
+//                    a.href = imgData;
+//                    a.download = 'screenshot.png';
+//                    a.click();
+//                });
+//            });
+//        });
+//    });
+		    
+	});
+	
+	
 	$("#datasheetBtn").on("click", function(){
+		 datasheetCount++;
 		Datasheet();
 	})
-	$("#graph").on("click", function(){
-		graphTabs();
-	})
+	$("#btnResult").click(function(){
+		resultJson.animationStart=startCount;
+		resultJson.datasheet=datasheetCount;
+		resultJson.trends=trendsCount;
+		console.log(resultJson);
+		result();
+	});
 	
 }
 
@@ -158,7 +236,7 @@ function levelSensorMimic(){
 		
 
 		paper.clear();
-		var time = 1000;
+		var time = 100;
 		var ht = -160;
 		var ht2 = -152;
 		var ht1 = 160;
@@ -514,7 +592,7 @@ function levelSensorMimic(){
 							$("#lt5Val").text("0");
 							
 							$("#startBtn").prop("disabled", false);
-							$("#datasheetBtn,#graph").prop("disabled", false);
+							$("#datasheetBtn,#graph,#btnResult").prop("disabled", false);
 							
 						}, time * 2);
 					}, time * 4);
@@ -766,10 +844,11 @@ function levelSensorMimic(){
 //TODO: start btn
 		//	Click event listener for start button 
 		document.getElementById("startBtn").addEventListener("click", function() {
+			startCount++;
 			data = {};
 			rnOn.toFront();
 			$("#startBtn").prop("disabled", true);
-			$("#datasheetBtn,#graph").prop("disabled", true);
+			$("#datasheetBtn,#graph,#btnResult").prop("disabled", true);
 			
 			gvalve_Sv2.toFront();
 			gvalve_Sv4.toFront();
