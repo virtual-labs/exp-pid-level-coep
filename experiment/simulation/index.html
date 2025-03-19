@@ -55,6 +55,7 @@
 			<button type="button" id="tagDetails" class="btn btn-danger btn1" data-toggle="modal" data-target="#tagDetail"><b>Tag details</b> </button>
 	        <button type="button" id="simDemo" class="btn btn-danger btn1" data-toggle="modal" data-target="#proStr"><b>Problem statement</b> </button>
   <button type="button" id="procedure" class="btn btn-danger btn1" data-toggle="modal" data-target="#procedure1"><b>Procedure</b> </button>
+  <button type="button" class="btn btn-danger btn1 button1"  id="report" style="margin-top:10px;"  hidden>Download report </button> 
 
 <!-- 		    <button type="button" id="btnForModal" class="btn btn-danger btn1 button1" data-toggle="modal" data-target="#myModal1"><b>Procedure </b></button> -->
 	     </div>
@@ -179,6 +180,20 @@ $("#coepLogo").click(function(evt) {
 	
 	 $('#coepLogo').off('click');
 });
+
+$('#report').on('click', function() {
+			$('#report').prop("hidden",true);
+		    html2canvas(document.querySelector("#mainDiv")).then(canvas => {
+		        // Append the screenshot canvas to the body
+		        document.body.appendChild(canvas);
+		        $("canvas").css("display","none");
+		        // Optionally save the screenshot as an image
+		        var link = document.createElement('a');
+		        link.download = 'LevelSensor_report.png';
+		        link.href = canvas.toDataURL();
+		        link.click();
+		    });
+		});
 
 </script>
 <script> 
