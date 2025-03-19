@@ -148,32 +148,17 @@ function levelSensorMimic(){
 		//For Hot Readings
 		
 			var GraphData='sensorGraphHot'+i;
+			var downloadGraphBtn='graphBtn'+i;
 			htm+="<div class='col-sm-12' id="+GraphData+">"
 			+'</div>'
-			+'<div class="col-sm-12">'
-			+'<button id="GraphDataButton'+(i+1)+'" class="btn btn-danger" style="margin-bottom:10px;float:right;" hidden>Download test Cycle report - '+(i+1)+'</button>'
+			+"<div class='col-sm-12' id="+downloadGraphBtn+">"
 			+'</div>'
 			+'</div>'
 			htm+='</div>'
 		$("#trends1").append(htm);
 			tempratureSensorGraphCold(dataArr[i].up,i);
 		tempratureSensorGraphHot(dataArr[i].down,i);
-		 var count=parseInt(i+1);
-			$('#GraphDataButton'+count).on('click', function() {
-				console.log("Clickiuyrotigjdfoigj");
-//				$('#saveAsJpg').prop("hidden",true);
-				
-			    html2canvas(document.querySelector('#RowDiv'+count)).then(canvas => {
-			        // Append the screenshot canvas to the body
-			        document.body.appendChild(canvas);
-			        $("canvas").css("display","none");
-			        // Optionally save the screenshot as an image
-			        var link = document.createElement('a');
-			        link.download = 'Density_report.png';
-			        link.href = canvas.toDataURL();
-			        link.click();
-			    });
-			});
+		 
 	}	
 	
 		 

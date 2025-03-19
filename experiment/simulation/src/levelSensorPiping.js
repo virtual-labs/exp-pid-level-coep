@@ -281,15 +281,14 @@ var pipingActualCount=0;
 	
 		 if(totalComp==0 ||(tank === "" ||  pump === ""  || valve=="" )){
 			  $("#modelDialog").removeClass("modal-xl");
-				$("#modelDialog").addClass("modal-md");
-				 $("#modelTitle").html("Error box");
+			  $("#modelDialog").addClass("modal-md");
+			 $("#modelTitle").html("Error box");
 				  $("#modelBody").html("<b>Select components</b> ");
 				  $("#modelBody").css("color","red");
 		  }
 		
 	else{
-		
-		
+
 		if((tank==StdTankCount) && (pump==StdPumpCount)  &&( StdValveCount==valve)  ){
 			
 			if(selectedArray.length==0){

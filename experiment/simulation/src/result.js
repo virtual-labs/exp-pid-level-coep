@@ -3,6 +3,7 @@ function result(){
 //	console.log(timerMasterJson);
 	
 	$("#simDemo,#procedure,#counter,#tagDetails").prop("hidden",true);
+	$("#report").prop("hidden",false);
 	$("#Header").html("<center><span >LEVEL SENSOR</span></center>");
 	
 	htm=''
