@@ -1,4 +1,6 @@
-##### Level measurement: 
+##Theory
+
+#### Level measurement: 
 
 In industry, liquids such as water, chemicals, and solvents are used in various processes. The amount of such liquid stored can be found by measuring level
  of the liquid in a container or vessel. The level affects not only the quantity delivered but also pressure and rate of flow in and out of the container. 
@@ -6,7 +8,7 @@ In industry, liquids such as water, chemicals, and solvents are used in various 
 Level sensors detect the level of substances like liquids, slurries, granular materials, and powders. The substance to be measured can be inside a container 
 or can be in its natural form (e.g. a river or a lake).
 
-###### The selection criteria for level sensor include: 
+#### The selection criteria for level sensor include: 
 
 -	The physical phase (liquid, solid or slurry) 
 -	Temperature 
@@ -19,7 +21,7 @@ or can be in its natural form (e.g. a river or a lake).
 -	Mechanical shock 
 -	Tank or bin size and shape 
 	
-###### From the application point of view the considerations are: 
+#### From the application point of view the considerations are: 
 
 -	Accuracy 
 -	Response time 
@@ -31,7 +33,7 @@ or can be in its natural form (e.g. a river or a lake).
 ![*level_Sensor*](images/Piping_Diagram_Level_Sensor.png)
 
 	
-###### Level measurements are broadly classified in two groups: 
+#### Level measurements are broadly classified in two groups: 
 
 -	Direct methods 
 -	Indirect methods 
@@ -46,7 +48,7 @@ In direct methods, the level is indicated directly by means of simple mechanical
 -	Ultrasonic 
 -	Radar 
 
-###### In Indirect methods, 
+#### In Indirect methods, 
 the level is converted in a measurable signal using a suitable transducer. Change in the material affects the measurement. A corrective factor must be used 
 in recalibrating the instrument. Few examples are : 
 
@@ -55,14 +57,14 @@ in recalibrating the instrument. Few examples are :
 -	Capacitance 
 -	Conductivity 
 
-##### Capacitance Level Measurement : 
+#### Capacitance Level Measurement : 
 
 Capacitance level sensors are used for wide variety of solids, aqueous and organic liquids, and slurries. The technique is frequently referred as RF as
  radio frequency signals applied to the capacitance circuit.
 
 ![*level_Sensor*](images/Capacitance_Level_Measurement.png)
 
-###### Working Principle : 
+#### Working Principle : 
 
 The principle of capacitive level measurement is based on change of capacitance. An insulated electrode acts as one plate of capacitor and the tank wall 
 (or reference electrode in a non-metallic vessel) acts as the other plate. The capacitance depends on the fluid level. An empty tank has a lower capacitance
@@ -70,7 +72,7 @@ while a filled tank has a higher capacitance.
 A simple capacitor consists of two electrode plate separated by a small thickness of an insulator such as solid, liquid, gas, or vacuum. This insulator is
 also called as dielectric. 
 Value of C depends on dielectric used, area of the plate and also distance between the plates.
-###### C = ε (K A/d)
+#### C = ε (K A/d)
 Where : 
 C = capacitance in Pico farads (pF) 
 K = relative dielectric constant of the insulating material 
@@ -80,7 +82,7 @@ d = distance between the conductors
 
 This change in capacitance can be measured using AC Bridge.
 
-###### Measurement : 
+#### Measurement : 
 
 Measurement is made by applying an RF signal between the conductive probe and the vessel wall. The RF signal results in a very low current flow through
  the dielectric process material in the tank from the probe to the vessel wall. When the level in the tank drops, the dielectric constant drops causing 
@@ -89,7 +91,7 @@ Measurement is made by applying an RF signal between the conductive probe and th
 This change is detected by the level switch's internal circuitry and translated into a change in the relay state of the level switch in case of point
  level detection. In the case of continuous level detectors, the output is not a relay state, but a scaled analog signal.
 
-##### Ultrasonic Level Measurement: 
+#### Ultrasonic Level Measurement: 
 
 Ultrasonic level sensors are used for highly viscous liquids, as well as bulk solids and in water treatment applications for pump control and open
  channel flow measurement. The sensors emit high frequency (20 kHz to 200 kHz) acoustic waves that are reflected back to and detected by the emitting
@@ -97,45 +99,45 @@ Ultrasonic level sensors are used for highly viscous liquids, as well as bulk so
 
 ![*level_Sensor*](images/Ultrasonic_Level_Measurement.png)
 
-###### Working Principle: 
+#### Working Principle: 
 Ultrasonic sensors emit one or multiple pulses of ultrasonic energy, which travel through the air at the speed of sound. A portion of this energy
  reflects off the target and travels back to the sensor. The sensor measures the total time required for the energy to reach the target and return 
  to the sensor. The distance to the object is then calculated utilizing the equation:
 
-###### D = ct / 2
+#### D = ct / 2
 
 D = distance from the sensor to the target 
 c = speed of sound in air 
 t = transit time for the ultrasonic pulse 
 To improve accuracy, an ultrasonic sensor may average the results of several pulses before outputting a new value.
 
-###### Measurement: 
+#### Measurement: 
 
 Ultrasonic pulse signal is targeted towards an object, it is reflected by the object and echo returns to the sender. The time travelled by the ultrasonic
  pulse is calculated, and the distance of the object is found. Bats use well known method to measure the distance while travelling.
 
-##### Pulse Radar type Level Measurement : 
+#### Pulse Radar type Level Measurement : 
 Pulse radar type level sensors are used for all applications including foaming, fuming, heavy vapours/dust, pressurized tank, etc with wide range of antenna.
  The microwave signal is generated and transmitted via antenna. 
 
 ![*level_Sensor*](images/Pulse_Radar.png)
 
-###### Working principle:
+#### Working principle:
 
 Microwave signal is emitted via an antenna and reflected on the measuring surface and receive with a time delay. The distance to the object is then calculated
  utilizing the equation:
 
-###### D= C t / 2 
+#### D= C t / 2 
 D = distance from the sensor to the target 
 c = speed of sound in air 
 t = transit time for the microwave pulse
 
-###### Measurement: 
+#### Measurement: 
 
 The antenna system of the radar sensor sends out extremely short microwave pulses that are reflected by the product surface and received back by the antenna
  system. The time elapsing from emission to reception of the microwave pulses is proportional to the level in the container.
 
-##### Guided wave radar type level measurement : 
+#### Guided wave radar type level measurement : 
 
 In this type of radar level measurement, microwave pulses are conducted along a cable or rod probe and reflected by the product surface. The measuring probe 
 of the sensor ensures that the signal reaches the medium undisturbed. 
@@ -148,13 +150,13 @@ The advantages of this sensor are that sensors measure reliably even with:
 
 ![*level_Sensor*](images/Guided_Wave_Rdar.png)
 
-###### Working principle: 
+#### Working principle: 
 
 High frequency microwave pulses are coupled on a cable or rod and guided along the probe. The pulse is reflected by the product surface and received by the
 processing electronics. This electronics evaluates the echo signal and converts it into a level information. All instruments are preset to the ordered probe
 length.
 
-##### Magnetostrictive type Level Measurement : 
+#### Magnetostrictive type Level Measurement : 
 
 It is based on the principle of Magnetostriction, has potentially very high measurement resolution, typically better than 0.001 inch.
 
@@ -173,7 +175,7 @@ This force travels back to the piezoceramic sensor at a characteristic speed. Wh
  start of the current pulse and the wave's arrival and The distance to the object is then calculated utilizing the equation : 
  D= C t / 2 
 
-##### Level Sensor P & ID
+#### Level Sensor P & ID
 
 
 ![*level_Sensor*](images/Level_Sensor_P&ID.png)
@@ -186,29 +188,29 @@ In this, four angle sealed solenoid valves (V1, V2, V3, V4) are used to control 
 water will be pump from lower tank to upper tank by using the motor (M) which is controlled by VFD through PLC when valve (V2 and V4) are in switch on
 condition. Similarly liquid is drained from higher to lower tank when valve (V1 and V3) are on.
 
-##### Level Sensor Plant
+#### Level Sensor Plant
 
 ![*level_Sensor*](images/Level_Sensor_plant.png)
 
 ![*level_Sensor*](images/Level_Sensor_plant1.png)
 
-##### Ultrasonic level transmitter 
+#### Ultrasonic level transmitter 
 
 ![*level_Sensor*](images/Ultrasonic_level_transmitter.png)
 
-##### Capacitive level transmitter
+#### Capacitive level transmitter
 
 ![*level_Sensor*](images/Capacitive_level_transmitter.png)
 
-##### Magnetostrictive  level transmitter
+#### Magnetostrictive  level transmitter
 
 ![*level_Sensor*](images/Magnetostrictive_level_transmitter.png)
 
-##### Pulse Radar level transmitter
+#### Pulse Radar level transmitter
 
 ![*level_Sensor*](images/Pulse_Radar_level_transmitter.png)
 
-##### Guided Radar level transmitter
+#### Guided Radar level transmitter
 
 ![*level_Sensor*](images/Guided_Radar_level_transmitter.png)
 
