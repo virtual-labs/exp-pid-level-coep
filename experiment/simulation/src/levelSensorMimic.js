@@ -991,8 +991,7 @@ function levelSensorMimic(){
 			v = v + 65; 
 			ve = diff = Math.random() * (max - min) + min;
 			randomSign = Math.random() < 0.5 ? -1 : 1;
-			perv = randomSign * ve; 
-			
+			perv = randomSign * ve; 			
 			
 			return v + perv;
 		}
@@ -1001,8 +1000,7 @@ function levelSensorMimic(){
 			v = v - 65; 
 			ve = diff = Math.random() * (max - min) + min;
 			randomSign = Math.random() < 0.5 ? -1 : 1;
-			perv = randomSign * ve; 
-			
+			perv = randomSign * ve;			
 			
 			return v + perv;
 		}
