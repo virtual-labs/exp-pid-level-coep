@@ -189,7 +189,7 @@ function levelSensorMimic(){
 		resultJson.animationStart=startCount;
 		resultJson.datasheet=datasheetCount;
 		resultJson.trends=trendsCount;
-		console.log(resultJson);
+	//	console.log(resultJson);
 		result();
 	});
 	
@@ -221,7 +221,7 @@ function levelSensorMimic(){
 		
 
 		paper.clear();
-		var time = 1000;
+	var time = 500;
 		var ht = -160;
 		var ht2 = -152;
 		var ht1 = 160;
@@ -990,8 +990,9 @@ function levelSensorMimic(){
 		function evaluateInc(v, ve, max, min){ 
 			v = v + 65; 
 			ve = diff = Math.random() * (max - min) + min;
+			perv = (v / 100) * ve;
 			randomSign = Math.random() < 0.5 ? -1 : 1;
-			perv = randomSign * ve; 			
+			perv = randomSign * perv; 			
 			
 			return v + perv;
 		}
@@ -999,8 +1000,9 @@ function levelSensorMimic(){
 		function evaluateDec(v, ve, max, min){ 
 			v = v - 65; 
 			ve = diff = Math.random() * (max - min) + min;
+			perv = (v / 100) * ve;
 			randomSign = Math.random() < 0.5 ? -1 : 1;
-			perv = randomSign * ve;			
+			perv = randomSign * perv;			
 			
 			return v + perv;
 		}
@@ -1063,6 +1065,11 @@ function levelSensorMimic(){
 			mv = evaluateDec(mv, mve, mmax, mmin);
 			cv = evaluateDec(cv, cve, cmax, cmin);
 			gv = evaluateDec(gv, gve, gmax, gmin);
+			
+			if (pv < 0) { pv = 0 }
+			if (mv < 0) { mv = 0 }
+			if (cv < 0) { cv = 0 }
+			if (gv < 0) { gv = 0 }
 			
 			$("#lt1Val").text(uv.toFixed(2));
 			$("#lt2Val").text(cv.toFixed(2));
