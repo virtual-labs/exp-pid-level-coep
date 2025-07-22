@@ -24,7 +24,6 @@ Standards and Guidelines  :
 #### Online Resources:
 
 -	Omega Engineering. (n.d.). Level Sensors : Calibration and Troubleshooting. Retrieved from https://www.omega.com/level-sensors-calibration-troubleshooting
--	Instrumentation, Systems, and Automation Society (ISA). (n.d.). Calibration of Level Sensors. Retrieved from https://www.isa.org/standards-and-publications/isa-publications/calibration-of-level-sensors/
 	
 #### Thesis and Dissertations :
 
