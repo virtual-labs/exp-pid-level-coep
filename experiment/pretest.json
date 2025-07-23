@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What is the definition of calibration?",
+      "question": "What is the definition of calibration as regards to testing of the level sensor?",
       "answers": {
          "a": "Calibration is the process of configuring an instrument to provide a result for a sample within an acceptable range",
         "b": "Calibration is configuring and verifying a measuring instrument's accuracy to ensure its readings match a known standard",
@@ -15,11 +15,11 @@
       "difficulty": "beginner"
     },
     {
-      "question": "What is traceability?", 	
+      "question": "What is traceability in connection with capacitive type level sensor?", 	
       "answers": {
         "a": "Traceability is the ability to identify and follow something or someone, or to keep track of information",
-        "b": "Traceability in calibration is the ability to link the readings of a measuring instrument to a known reference standard",
-        "c": "Traceability means knowing and documenting the reference instrument used for calibration of device under test",
+        "b": "Traceability in calibration is the ability to link the readings of a capacitive type level sensor to a known reference standard",
+        "c": "Traceability means knowing and documenting the reference instrument used for level sensor calibration of device under test",
         "d": "All"
       },
      
@@ -27,19 +27,19 @@
       "difficulty": "beginner"
     },
     {
-      "question": "What should be the standard operating region of the sensors used in any industry?",
+      "question": "What should be the standard operating region of the level sensors used in any industry?",
       "answers": {
-         "a": "20% to 80 %",
-        "b": "30 % to 70%",
-        "c": "0 % to 100 %",
-        "d": "10% to 90 %"
+         "a": "20% to 80%",
+        "b": "30% to 70%",
+        "c": "0% to 100%",
+        "d": "10% to 90%"
       },
      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
 	{
-      "question": "On what basis the sensors are selected for specific application in an industry?",
+      "question": "On what basis the level sensors are selected for specific application in an industry?",
       "answers": {
         "a": "Range of the sensor",
         "b": "Accuracy and Linearity in the operating region",			
@@ -52,28 +52,15 @@
     },
 	
 	{
-      "question": "In which stage of the project the design strategy is freezed?",
+      "question": "In which stage of the level sensor calibration setup project the design strategy is freezed?",
       "answers": {
-        "a": "At the time of proposal",
+        "a": "At the time of proposal of procurement of the level sensor",
         "b": "At the time of Errection stage",
         "c": "At the time of Commissioing stage",
         "d": "At the time of detailed engieering"
       },
      
       "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-  
-  {
-      "question": "As a standard practice how much settling time we should configure for storing the readings to PLC for this set-up?",
-      "answers": {
-        "a": "Depends on plant lay-out",
-        "b": "All of these",
-        "c": "Greater than the settling time of sensor but minimum equal to settling time of process",
-        "d": "The scan time of PLC"
-      },
-     
-      "correctAnswer": "c",
       "difficulty": "beginner"
     },
 	
@@ -91,25 +78,12 @@
     },
 	
 	 {
-      "question": "What safety feature needs to be included in this set-up  so as to avoid any accident?",
-      "answers": {
-        "a": "Depends on plant lay-out",
-        "b": "All of these",
-        "c": "Greater than the settling time of sensor but minimum equal to settling time of process",
-        "d": "The scan time of PLC"
-      },
-     
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-	
-	 {
-      "question": "As a standard practice how much settling time we should configure for storing  the readings to PLC for this set-up?",
+      "question": "What safety feature needs to be included in this level sensor calibration set-up so as to avoid any accident?",
       "answers": {
         "a": "Necessary interlocks",
         "b": "Emergency STOP push button",
         "c": "Redundancy at PLC level",
-        "d": "'Fail Safe' operation for all components"
+        "d": "Fail Safe operation for all components"
       },
      
       "correctAnswer": "d",
@@ -129,7 +103,7 @@
     },
 	
 	 {
-      "question": "Will there be any change in calibration set-up as regards to application for which it will be used?",
+      "question": "Will there be any change in calibration set-up of level sensors as regards to application for which it will be used?",
       "answers": {
         "a": "Yes",
         "b": "No"

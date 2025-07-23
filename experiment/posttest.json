@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "In your opinion why all the customer requirements could not be satisfied?",
+      "question": "In your opinion why all the customer requirements associated with level sensor calibration lab could not be satisfied?",
       "answers": {
          "a": "Poor Engineering of the project",
         "b": "Lack of undestanding of the requirements",
@@ -15,19 +15,17 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Is the dynamic simulation of the process matches with the fullest extent of customer requirements?",
+      "question": "Is the dynamic simulation of the level sensor setup matches with the fullest extent of customer requirements?",
       "answers": {
         "a": "Yes",
         "b": "No"
-       
-
       },
      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "Which component of the plant will consume maximum energy?",
+      "question": "Which component of level calibration setup will consume maximum energy?",
       "answers": {
         "a": "Pump",
         "b": "Control system",
@@ -52,15 +50,28 @@
     },
 	
 	{
-      "question": "Which method will be useful for reducing the energy consumption of the calibration facility?",
+      "question": "Which method will be useful for reducing the energy consumption of the level calibration facility?",
       "answers": {
-        "a": "At the time of proposal",
-        "b": "At the time of Errection stage",
-        "c": "At the time of Commissioing stage",
-        "d": "At the time of detailed engieering"
+        "a": "By reducing the number of cycles of the experiments",
+        "b": "By maximizing the number of sensors to be calibrated simultaneously",
+        "c": "By re-designing the entire calibration facility",
+        "d": "None listed"
       },
      
-      "correctAnswer": "a",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	
+	 {
+      "question": "As a standard practice how much settling time of level sensors we should configure for storing  the readings to PLC for this set-up?",
+      "answers": {
+        "a": "Depends on plant lay-out",
+        "b": "Depends on settling time of sensor",
+        "c": "Greater than the settling time of sensor but minimum equal to settling time of process",
+        "d": "The scan time of PLC"
+      },
+     
+      "correctAnswer": "c",
       "difficulty": "beginner"
     }
   
