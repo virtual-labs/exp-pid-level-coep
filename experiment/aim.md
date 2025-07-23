@@ -1,5 +1,5 @@
 ## Aim 
-Design, built, and commission the pilot plant for testing of level sensors as per the requirements of the customer
+Design, built, and commission the developed P & I Diagram for the level sensor calibration setup as per the requirements of the customer
 
 ## Objectives
 -	To understand the requirements of customer
