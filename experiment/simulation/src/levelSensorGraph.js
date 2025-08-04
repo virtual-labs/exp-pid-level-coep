@@ -1,11 +1,11 @@
 function tempratureSensorGraphCold(sensorData1, i) {
     // Ensure we have a valid sensorData1 object
     let sensorData = JSON.parse(JSON.stringify(sensorData1));
-    console.log(sensorData); // Check the data before proceeding
+    //console.log(sensorData); // Check the data before proceeding
 
     // Ensure tt7 is not empty or undefined
     const categories = sensorData.map(data => data.uv);
-    console.log(categories); // Check categories before using them
+    //console.log(categories); // Check categories before using them
 
     // Extracting other tt values as separate arrays
     const tt1Data = sensorData.map(data => parseFloat(data.uv));
@@ -15,11 +15,11 @@ function tempratureSensorGraphCold(sensorData1, i) {
     const tt5Data = sensorData.map(data => parseFloat(data.gv));
 
     // Check the extracted data arrays
-    console.log(tt1Data); // tt1 values
-    console.log(tt2Data); // tt2 values
-    console.log(tt3Data); // tt3 values
-    console.log(tt4Data); // tt4 values
-    console.log(tt5Data); // tt5 values
+    //console.log(tt1Data); // tt1 values
+    //console.log(tt2Data); // tt2 values
+    //console.log(tt3Data); // tt3 values
+    //console.log(tt4Data); // tt4 values
+    //console.log(tt5Data); // tt5 values
 
 var downloadGraphBtn='graphBtn'+i;
 var btnadd='<button id="GraphDataButton'+(i+1)+'" class="btn btn-danger" style="margin-bottom:10px;float:right;">Download test Cycle report - '+(i+1)+'</button>'
@@ -27,7 +27,7 @@ var btnadd='<button id="GraphDataButton'+(i+1)+'" class="btn btn-danger" style="
 
 var count=parseInt(i+1);
 			$('#GraphDataButton'+count).on('click', function() {
-				console.log("Clickiuyrotigjdfoigj");
+				//console.log("Clickiuyrotigjdfoigj");
 //				$('#saveAsJpg').prop("hidden",true);
 				
 			    html2canvas(document.querySelector('#RowDiv'+count)).then(canvas => {
@@ -90,11 +90,11 @@ var count=parseInt(i+1);
 function tempratureSensorGraphHot(sensorData1, i) {
     // Ensure we have a valid sensorData1 object
     let sensorData = JSON.parse(JSON.stringify(sensorData1));
-    console.log(sensorData); // Check the data before proceeding
+    //console.log(sensorData); // Check the data before proceeding
 
     // Ensure tt7 is not empty or undefined
     const categories = sensorData.map(data => data.uv);
-    console.log(categories); // Check categories before using them
+    //console.log(categories); // Check categories before using them
 
     // Extracting other tt values as separate arrays
     const tt1Data = sensorData.map(data => parseFloat(data.uv));
@@ -104,11 +104,11 @@ function tempratureSensorGraphHot(sensorData1, i) {
     const tt5Data = sensorData.map(data => parseFloat(data.gv));
 
     // Check the extracted data arrays
-    console.log(tt1Data); // tt1 values
-    console.log(tt2Data); // tt2 values
-    console.log(tt3Data); // tt3 values
-    console.log(tt4Data); // tt4 values
-    console.log(tt5Data); // tt5 values
+    //console.log(tt1Data); // tt1 values
+    //console.log(tt2Data); // tt2 values
+    //console.log(tt3Data); // tt3 values
+    //console.log(tt4Data); // tt4 values
+    //console.log(tt5Data); // tt5 values
 
 
     // Dynamically create the div ID for the graph

@@ -115,12 +115,12 @@ function levelSensorInstrument()
 		 ll=parseInt($("#ll").val());
 		 CountComp1();
 		 
-		  console.log(" fm "+fm);
-		  console.log(" vplc "+vplc);
-		  console.log(" afr "+afr);
-		  console.log(" vfd "+vfd);
-		  console.log(" lh "+lh);
-		  console.log(" ll "+ll);
+		  //console.log(" fm "+fm);
+		  //console.log(" vplc "+vplc);
+		  //console.log(" afr "+afr);
+		  //console.log(" vfd "+vfd);
+		  //console.log(" lh "+lh);
+		  //console.log(" ll "+ll);
 		 
 		  if(totalComp1==0){
 				$("#modelDialog1").addClass("modal-md");
@@ -217,16 +217,16 @@ function levelSensorInstrument()
 			perLHCount=parseFloat((lh*100)/StdLHCount);
 			perLLCount=parseFloat((ll*100)/StdLLCount);
 			
-			 console.log(" perVPLCCount "+perVPLCCount);
-			 console.log(" perAFRCount "+perAFRCount);
-			 console.log(" perVFDCount "+perVFDCount);
-			 console.log(" perFlowMeterCount "+perFlowMeterCount);
-			 console.log(" perLHCount "+perLHCount);
-			 console.log(" perLLCount "+perLLCount);
+			 //console.log(" perVPLCCount "+perVPLCCount);
+			 //console.log(" perAFRCount "+perAFRCount);
+			 //console.log(" perVFDCount "+perVFDCount);
+			 //console.log(" perFlowMeterCount "+perFlowMeterCount);
+			 //console.log(" perLHCount "+perLHCount);
+			 //console.log(" perLLCount "+perLLCount);
 			 
 				totalComp1=perVPLCCount+perAFRCount+perVFDCount+perFlowMeterCount+perLHCount+perLLCount;
 			  avg=parseInt(totalComp1/6);
-			  console.log(" avg "+avg);
+			  //console.log(" avg "+avg);
 			
 				 $("#modelDialog1").removeClass("modal-xl");
 				$("#modelDialog1").addClass("modal-md");
@@ -266,9 +266,9 @@ function levelSensorInstrument()
 				};
 				
 		InstrMasterJson.Instrument=tempMasterJsonInstr;
-		console.log(InstrMasterJson);
+		//console.log(InstrMasterJson);
 		resultJson.instrument=instrActualCount;
-		console.log(resultJson);
+		//console.log(resultJson);
 	}
 	$("#nextLevel2").click(function(){
 		if(flag==1){

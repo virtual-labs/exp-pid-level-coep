@@ -182,10 +182,10 @@ var pipingActualCount=0;
 		 
 		 CountComp();
 		 
-		  console.log(" tank "+tank);
+		  //console.log(" tank "+tank);
 //		  console.log(" wt "+wt);
-		  console.log(" pump "+	 pump);
-		  console.log(" valves "+valve);
+		  //console.log(" pump "+	 pump);
+		  //console.log(" valves "+valve);
 		  
 		  if(totalComp==0 ||(tank === ""  || pump === "" || valve=="" )){
 			  $("#modelDialog").removeClass("modal-xl");
@@ -337,16 +337,16 @@ var pipingActualCount=0;
 			
 			 perValveCount=parseFloat((valve*100)/StdValveCount);
 			 
-			  console.log(" perTankCount "+perTankCount);
-			  console.log(" perPumpCount "+perPumpCount);
+			  //console.log(" perTankCount "+perTankCount);
+			  //console.log(" perPumpCount "+perPumpCount);
 			
-			  console.log(" perValveCount "+perValveCount);
+			  //console.log(" perValveCount "+perValveCount);
 			  
 				totalComp=perTankCount+perPumpCount+perValveCount;
 			  avg=parseInt(totalComp/3);
 			  
-			  console.log(" avg "+avg);
-			  console.log(" totalComp "+totalComp);
+			  //console.log(" avg "+avg);
+			  //console.log(" totalComp "+totalComp);
 				 $("#modelDialog").removeClass("modal-xl");
 				$("#modelDialog").addClass("modal-md");
 				if((tank>StdTankCount) || (pump>StdPumpCount) || (valve>StdValveCount)){
@@ -384,9 +384,9 @@ var pipingActualCount=0;
 		
 		ComponentMasterJson.Component=tempMasterJsonComp;
 		ComponentMasterJson.Component.Utilities=selectedArray;
-		console.log(ComponentMasterJson);
+		//console.log(ComponentMasterJson);
 		resultJson.piping=pipingActualCount;
-		console.log(resultJson);
+		//console.log(resultJson);
 	}
 	
 	$("#nextLevel1").click(function(){
