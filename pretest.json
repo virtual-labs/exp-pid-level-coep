@@ -1,0 +1,123 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the definition of calibration as regards to testing of the level sensor?",
+      "answers": {
+         "a": "Calibration is the process of configuring an instrument to provide a result for a sample within an acceptable range",
+        "b": "Calibration is configuring and verifying a measuring instrument's accuracy to ensure its readings match a known standard",
+        "c": "Calibration means comparing with standard device and adjusting it for accuracy within the limit",
+        "d": "All"
+		
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is traceability in connection with capacitive type level sensor?", 	
+      "answers": {
+        "a": "Traceability is the ability to identify and follow something or someone, or to keep track of information",
+        "b": "Traceability in calibration is the ability to link the readings of a capacitive type level sensor to a known reference standard",
+        "c": "Traceability means knowing and documenting the reference instrument used for level sensor calibration of device under test",
+        "d": "All"
+      },
+     
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What should be the standard operating region of the level sensors used in any industry?",
+      "answers": {
+         "a": "20% to 80%",
+        "b": "30% to 70%",
+        "c": "0% to 100%",
+        "d": "10% to 90%"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "On what basis the level sensors are selected for specific application in an industry?",
+      "answers": {
+        "a": "Range of the sensor",
+        "b": "Accuracy and Linearity in the operating region",			
+        "c": "Cost of the sensor",
+        "d": "All "
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "In which stage of the level sensor calibration setup project the design strategy is freezed?",
+      "answers": {
+        "a": "At the time of proposal of procurement of the level sensor",
+        "b": "At the time of Errection stage",
+        "c": "At the time of Commissioing stage",
+        "d": "At the time of detailed engieering"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	 {
+      "question": "For calibration of level sensor in your opinion which sensor will be the best as 'Standard' sensor?",
+      "answers": {
+        "a": "Ultrasonic",
+        "b": "Capacitive",
+        "c": "Guided Wave RADAR",
+        "d": "Magntostrictive"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	
+	 {
+      "question": "What safety feature needs to be included in this level sensor calibration set-up so as to avoid any accident?",
+      "answers": {
+        "a": "Necessary interlocks",
+        "b": "Emergency STOP push button",
+        "c": "Redundancy at PLC level",
+        "d": "Fail Safe operation for all components"
+      },
+     
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+	
+	 {
+      "question": "Will there be any effect of installation of level sensor in the tank as regards to accuracy of the readings?",
+      "answers": {
+        "a": "Yes",
+        "b": "No"
+       
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	 {
+      "question": "Will there be any change in calibration set-up of level sensors as regards to application for which it will be used?",
+      "answers": {
+        "a": "Yes",
+        "b": "No"
+       
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+	
+  
+  
+  
+  
+  
+  ]
+}
